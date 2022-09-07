@@ -14,6 +14,10 @@ jobs:
       image: node
     steps:
       - uses: actions/checkout@v3 
+      
+      - uses: actions/checkout@v3 
+        with:
+          repository: https://github.com/Impulse-Team/container-chat-front-example.git
       - name: Install dependencies & Tests
         run: |
           npm install
